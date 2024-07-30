@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --darkblue: #0A3871;
+    --background: #F3F5FC;
+    --lightgray: #D8DFE8;
+    --textgray: #495057;
+    --interfont: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputBox {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 2rem;
+    height: 3rem;
+}
+
+.inputComponent {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    height: 60%;
+    background-color: var(--background);
+    border: none;
+    font-family: var(--interfont);
+    color: var(--darkblue);
+    font-size: 2rem;
+    display: flex;
+    resize: none;
+}
+
+#textinput::-webkit-input-placeholder {
+    color: var(--darkblue);
+}
+
+.buttonBox {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.buttonRules {
+    display: flex;
+    align-items: center;
+}
+
+.alertImage {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.alertMessage {
+    color: var(--textgray);
+    font-family: var(--interfont);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button>button {
+    width: 40%;
+    height: 4.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.1rem;
+    font-family: var(--interfont);
+    font-weight: 400;
+}
+
+.button>button:hover {
+    cursor: pointer;
+}
+
+.crip {
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+}
+
+.decrip {
+    background-color: var(--lightgray);
+    border: 1px solid var(--darkblue);
+    color: var(--darkblue);
+}
+
+.outputBox {
+    width: 25%;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notFoundTitle {
+    width: 80%;
+    font-family: var(--interfont);
+    text-align: center;
+}
+
+.notFoundText {
+    width: 70%;
+    font-family: var(--interfont);
+    color: var(--textgray);
+    text-align: center;
+}
+
+.resultDiv {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 84%;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.resultParagraph {
+    width: 80%;
+    font-family: var(--interfont);
+    font-size: 2rem;
+    color: var(--darkblue);
+    text-align: center;
+}
+
+.copyToClipboard {
+    width: 80%;
+    height: 4.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.1rem;
+    font-family: var(--interfont);
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid var(--darkblue);
+    color: var(--darkblue);
+}
+
+.copyToClipboard:hover {
+    cursor: pointer;
+}

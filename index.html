@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de texto</title>
+</head>
+
+<body>
+    <main>
+        <div class="inputBox">
+            <img class="logo" src="assets/Vector.png" alt="Logo alura">
+            <div class="inputComponent">
+                <textarea class="input" type="text" name="textinput" id="textinput" placeholder="Digite seu texto"
+                    pattern="[a-z]+$"></textarea>
+                <div class="buttonBox">
+                    <div class="buttonRules">
+                        <img class="alertImage" src="assets/bi_exclamation-circle-fill.png" alt="Alerta">
+                        <p class="alertMessage">Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="button">
+                        <button class="crip" onclick="criptograph()">Criptografar</button>
+                        <button class="decrip" onclick="decriptograph()">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outputBox" id="outputBox">
+            <img src="assets/High quality products 1 1.svg" alt="Imagem de pessoa procurando por um diamante">
+            <h2 class="notFoundTitle">Nenhuma mensagem encontrada</h2>
+            <p class="notFoundText">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
