@@ -97,7 +97,7 @@ function decriptograph() {
     let string = input.value;
 
     if (!string) {
-        window.alert("Você precisa digitar um texto para ser criptografado.");
+        window.alert("Você precisa digitar um texto para ser descriptografado.");
         return;
     }
 
