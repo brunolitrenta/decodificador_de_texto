@@ -150,13 +150,19 @@ function decriptograph() {
 
     output.innerHTML = '';
 
+    const div = document.createElement('div');
+
+    div.className = "resultDiv"
+
+    output.appendChild(div);
+
     createParagraph = document.createElement('p');
 
     createParagraph.innerHTML = cripto.join('');
 
     createParagraph.className = "resultParagraph";
 
-    output.appendChild(createParagraph);
+    div.appendChild(createParagraph);
 
     const copyButton = document.createElement("button");
 
@@ -164,7 +170,7 @@ function decriptograph() {
 
     copyButton.className = "copyToClipboard";
 
-    output.appendChild(copyButton);
+    div.appendChild(copyButton);
 
     copyButton.onclick = () => copy();
 }

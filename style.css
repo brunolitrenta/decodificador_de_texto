@@ -131,6 +131,10 @@ main {
     align-items: center;
 }
 
+.findingImage{
+    width: 80%;
+}
+
 .notFoundTitle {
     width: 80%;
     font-family: var(--interfont);
@@ -148,25 +152,25 @@ main {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 84%;
+    height: 100%;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
 }
 
 .resultParagraph {
     width: 80%;
-
+    min-height: 2rem;
+    height: 80%;
+    overflow-y: scroll;
     word-break: break-all;
     font-family: var(--interfont);
     font-size: 2rem;
     color: var(--darkblue);
-
 }
 
 .copyToClipboard {
     width: 80%;
-    height: 4.5rem;
+    min-height: 3.5rem;
     border-radius: 1.3rem;
     font-size: 1.1rem;
     font-family: var(--interfont);
@@ -195,7 +199,7 @@ main {
     .inputBox {
         margin-top: 1rem;
         width: 100%;
-        height: 70%;
+        min-height: 80%;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -215,6 +219,7 @@ main {
     }
 
     .button>button {
+        width: 45%;
         height: 6rem;
         font-size: 2rem;
     }
@@ -241,10 +246,9 @@ main {
 
     .resultParagraph {
         font-size: 2rem;
-        min-height: 15%;
-        height: 100%;
+        min-height: 2rem;
+        height: 90%;
         width: 90%;
-        margin-bottom: 1rem;
     }
 
     .copyToClipboard {
@@ -269,7 +273,7 @@ main {
         margin-top: 1rem;
         display: flex;
         width: 100%;
-        min-height: 80%;
+        min-height: 90%;
         flex-direction: column;
         justify-content: space-evenly;
     }
@@ -304,7 +308,6 @@ main {
     .outputBox {
         width: 90%;
         border-radius: 1rem;
-        justify-content: space-between;
         align-items: center;
     }
 
@@ -319,9 +322,8 @@ main {
     .resultParagraph {
         font-size: 1rem;
         width: 100%;
-        min-height: 10%;
-        max-height: 90%;
-        margin-bottom: 3rem;
+        min-height: 1rem;
+        height: 90%;
     }
 
     .copyToClipboard {
@@ -329,4 +331,23 @@ main {
         min-height: 4rem;
     }
 
+}
+
+@media (max-height: 810px){
+    .inputBox{
+        min-height: 80%;
+        margin-bottom: 1.5rem;
+    }
+
+    .buttonBox{
+        height: 35%;
+    }
+
+    .alertMessage{
+        font-size: 0.8rem;
+    }
+
+    .button>button{
+        height: 3.5rem;
+    }
 }
