@@ -18,6 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
     height: 100vh;
     width: 100vw;
 }
@@ -128,7 +129,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
 .notFoundTitle {
@@ -156,10 +156,12 @@ main {
 
 .resultParagraph {
     width: 80%;
+
+    word-break: break-all;
     font-family: var(--interfont);
     font-size: 2rem;
     color: var(--darkblue);
-    text-align: center;
+
 }
 
 .copyToClipboard {
@@ -176,4 +178,156 @@ main {
 
 .copyToClipboard:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        min-height: 100vh;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        margin-top: 1rem;
+        width: 100%;
+        height: 70%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .inputComponent {
+        height: 100%;
+        width: 100%;
+    }
+
+    .input {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .buttonRules{
+        margin-bottom: 1rem;
+    }
+
+    .button>button {
+        height: 6rem;
+        font-size: 2rem;
+    }
+
+    .outputBox {
+        position: absolute;
+        top: 75%;
+        width: 86%;
+        padding: 1rem;  
+        border-radius: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .findingImage {
+        display: none;
+    }
+
+    .notFoundTitle {
+        font-size: 2.3rem;
+    }
+
+    .notFoundText {
+        font-size: 1.8rem;
+    }
+
+    .resultParagraph {
+        font-size: 2rem;
+        min-height: 15%;
+        height: 100%;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .copyToClipboard {
+        min-height: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .inputBox {
+        margin-top: 1rem;
+        display: flex;
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .inputComponent {
+        height: 100%;
+        width: 100%;
+    }
+
+    .input {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .buttonBox {
+        height: 30%;
+        justify-content: space-between;
+    }
+
+    .button {
+        gap: 1rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .button>button {
+        height: 4.5rem;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .outputBox {
+        position: absolute;
+        top: 82%;
+        width: 82%;
+        border-radius: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .notFoundTitle {
+        font-size: 0.9rem;
+    }
+
+    .notFoundText {
+        font-size: 0.8rem;
+    }
+
+    .resultParagraph {
+        font-size: 1rem;
+        width: 100%;
+        min-height: 10%;
+        max-height: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .copyToClipboard {
+        min-height: 4rem;
+    }
+
 }
